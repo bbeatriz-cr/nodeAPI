@@ -15,4 +15,10 @@ router.post('/frases',apiController.criarFrase)
 
 router.get('/frases',apiController.listarFrases)
 
+router.get('/frases/:id',apiController.pegarFrase)
+
+router.put('/frases/:id',apiController.editaFrase)
+
+router.delete('/frases/:id',apiController.deletarFrase)
+
 export default router
